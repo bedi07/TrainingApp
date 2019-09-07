@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+        <!-- <div fxHide.gt-xs> hide menu from small screen -->
+          <div>
+          <button mat-icon-button (click)="togglesidenav()">
+              <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+        <div>
+          <a routerLink="/">LOGO</a>
+        </div>
+        <div fxFlex fxLayout fxLayoutAlign="flex-end">
+          <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+            <li>
+                <a routerLink="/signup">SignUp</a>
+            </li>
+            <li>
+                <a routerLink="/login">Login</a>
+            </li>
+            <li>
+                <a routerLink="/traning">Training</a>
+            </li>
+            <li>
+                <a>LogOut</a>
+            </li>
+          </ul>
+   </div>
+   </mat-toolbar>
